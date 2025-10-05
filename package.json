@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: No tests were created\" && exit 1"
+    "test": "echo \"Warning: No tests created yet.\" && exit 1"
   },
   "repository": {
     "type": "git",
