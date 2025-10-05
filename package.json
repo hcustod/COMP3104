@@ -2,16 +2,17 @@
   "name": "comp3104",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Warning: No tests created yet.\""
+    "test": "echo \"Error: No tests were created\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hcustod/COMP3104.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Henrique Custodio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hcustod/COMP3104/issues"
