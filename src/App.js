@@ -1,11 +1,23 @@
-import React from "react";
+import './App.css';
+import React, { useState } from "react";
+import StudentForm from "./components/StudentForm";
+import StudentList from "./components/StudentList";
 
-export default function App() {
+const App = () => {
+  const [students, setStudents] = useState([]);
+
+  const addStudent = (student) => {
+    setStudents([...students, student]);
+  };
+
   return (
-    <main style={{ fontFamily: "system-ui, sans-serif", padding: 24 }}>
-      <h1>COMP3104 – React SPA</h1>
-      <p>Deployed with GitHub Pages via Travis.</p>
-    </main>
+    <div className="App">
+      <h1>Student Information System</h1>
+      <h5>Developed By: StudentID || Student Name || DevOps</h5>
+      <StudentForm addStudent={addStudent} />
+      <StudentList students={students} />
+    </div>
   );
-}
+};
 
+export default App;
